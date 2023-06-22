@@ -1,0 +1,19 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "browser-sync app -w ",
+    "sass": "sass  scss/styles.scss app/css/styles.css --watch --source-map",
+    "start": "concurrently \"npm run sass\" \"npm run server\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.0",
+    "prettier": "^2.8.8",
+    "sass": "^1.63.4"
+  }
+}
