@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: url(img/project-5.jpg) no-repeat center center / cover;
+  text-align: center;
+}
+
+.container {
+  width: 15%;
+  height: 9%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 3px;
+  opacity: 0.8;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+#timer {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 25px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+button {
+  margin: 0 10px;
+  border: none;
+}
+
+button i {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  width: 36px;
+}
+
+.nav {
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  grid-row-start: 2;
+}
+
+.nav li {
+  display: block;
+  margin-right: 20px;
+  font-size: larger;
+}
+
+a {
+  text-decoration: none;
+  background-color: lightcyan;
+  font-size: 23px;
+  padding: 5px;
+  opacity: 0.8;
+  border-radius: 3px;
+  box-shadow: 0 0 3px;
+}
+
+a:hover {
+  background-color: lightcyan;
+  color: lightskyblue;
+  box-shadow: white;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 35px;
+  font-size: larger;
+  width: 95%;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+#notes {
+  font-size: 20px;
+  opacity: 0.85;
+  border-color: lightcyan;
+  border-width: 10px;
+  box-shadow: 0 0 10px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+#play {
+  background-color: green;
+}
+
+#pause {
+  background-color: orange;
+}
+
+#reset {
+  background-color: red;
+}
+
+#music {
+  margin-left: 50px;
+  padding-top: 12px;
+  margin-top: 17px;
+}
+@media print {
+  #content {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-right: 50px;
+  }
+
+  a {
+    margin: 0;
+  }
+
+  #notes {
+    font-size: 20px;
+    margin-top: 35px;
+    width: 70%;
+    margin-right: 57px;
+  }
+
+  .container {
+    width: 38%;
+    margin-top: 25px;
+    position: relative;
+    height: 60%;
+    margin-left: 125px;
+  }
+
+  .buttons {
+    margin: 0;
+    padding: 9px;
+  }
+
+  button i {
+    font-size: 10px;
+    position: relative;
+  }
+}
+
+@media screen {
+  .forscreen {
+    display: block;
+  }
+  .forprinting {
+    display: none;
+  }
+}
+@media print {
+  .forscreen {
+    display: none;
+  }
+  .forprinting {
+    display: block;
+  }
+}

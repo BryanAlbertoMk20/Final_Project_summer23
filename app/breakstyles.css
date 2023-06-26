@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: url('img/forrest.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 35px;
+  padding-bottom: 60px;
+  font-size: larger;
+  opacity: 0.6;
+}
+
+.nav {
+  color: white;
+  list-style: none;
+  display: flex;
+  margin-bottom: 15px;
+  position: absolute;
+  width: 97%;
+  justify-content: space-between;
+  left: 37px;
+  opacity: 0.6;
+}
+
+.nav li {
+  display: block;
+  padding-right: 30px;
+  font-size: larger;
+}
+
+a {
+  text-decoration: none;
+  background-color: lightcyan;
+  font-size: 23px;
+  padding: 5px;
+  opacity: 0.8;
+  border-radius: 3px;
+  box-shadow: 0 0 3px;
+}
+
+audio {
+  margin-top: 55px;
+  opacity: 0.6;
+}
+
+@media all and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  audio {
+    margin-top: 55px;
+    opacity: 0.6;
+  }
+
+  .nav {
+    left: 12px;
+    opacity: 0.6;
+  }
+}

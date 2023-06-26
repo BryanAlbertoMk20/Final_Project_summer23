@@ -7,9 +7,10 @@
 
 body {
   background: url('img/project-5.jpg') no-repeat center center/cover;
-  height: 100vh;
+  min-height: 100vh;
   line-height: 1.2;
   padding: 20px;
+  width: 100%;
 }
 
 header {
@@ -54,7 +55,7 @@ h2 {
   display: flex;
   margin-bottom: 15px;
   position: absolute;
-  right: 12px;
+  /* right: 12px; */
   width: 97%;
   justify-content: space-between;
 }
@@ -81,6 +82,7 @@ a {
 
 .reveal {
   font-size: 25px;
+  margin-top: 20px;
 }
 
 @media all and (max-width: 800px) {
@@ -88,30 +90,30 @@ a {
     margin: 0;
   }
   .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
   }
 
   .nav li {
     display: flex;
-    align-items: flex-end;
-    width: 70%;
+    /* align-items: flex-end; */
+    width: 100%;
     text-align: center;
-    margin-left: 47px;
+    margin-left: 6.5px;
   }
 
   .reveal {
     display: flex;
-    width: 60%;
+    width: 100%;
+    justify-content: center;
   }
 
   .text {
-    margin-bottom: 25px;
     color: black;
     background-color: lightcyan;
+    margin-bottom: 12px;
   }
 
   header {
@@ -137,7 +139,7 @@ a:hover {
 }
 
 /* @media print {
-  All your print styles go here #content {
+   #content {
     display: none !important;
   }
 } */
